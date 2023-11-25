@@ -1,0 +1,213 @@
+img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  width: 1200px;
+  margin: 0 auto;
+  border: 2px solid black;
+}
+
+picture {
+  background-color: blue;
+  padding: 30px;
+  width: 200px;
+}
+header {
+  display: flex;
+}
+#cabecero {
+  width: 100%;
+}
+#cabecero h1 {
+  background-color: white;
+  height: 50%;
+  margin: 0;
+  display: grid;
+  place-content: center;
+  font-size: 45px;
+  outline: 30px solid blue;
+  outline-offset: -30px;
+}
+#cabecero p {
+  background-color: blue;
+  height: 50%;
+  margin: 0;
+  display: grid;
+  place-content: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 200px;
+  list-style: none;
+  background-color: black;
+  margin: 0;
+  padding-block: 20px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: blue;
+}
+
+main {
+  padding: 15px;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 80% auto;
+}
+
+#caja section:last-child {
+  grid-column: span 2;
+}
+
+aside {
+  text-align: center;
+}
+
+main > * {
+  border: 2px solid black;
+  background-color: white;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+aside img {
+  width: 50px;
+  margin: 0 auto;
+}
+aside div {
+  display: grid;
+  gap: 15px;
+}
+
+footer {
+  border-top: 2px solid black;
+  text-align: center;
+  background-color: blue;
+  padding: 20px;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea {
+  height: 30px;
+  display: block;
+  width: 100%;
+  padding: 6px 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.inline {
+  display: inline;
+}
+
+.formulario-cifrado {
+    margin-inline: auto;
+    width: 1000px;
+  display: grid;
+  place-content: center;
+  overflow-wrap: break-word;
+}
+
+.form-contacto {
+  display: grid;
+  place-content: center;
+  min-height: 400px;
+}
+
+button {
+  padding: 16px;
+  border-radius: 50px;
+  border: 1px solid black;
+  background-color: white;
+  cursor: pointer;
+  transition: all ease-in 0.2s;
+}
+
+button:hover,
+button:focus {
+  background-color: black;
+  color: white;
+  border: 1px solid transparent;
+}
+
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 1px solid blue;
+}
+
+.socialmedia {
+  transition: all ease-in 0.2s;
+}
+
+.redes-sociales a {
+  max-width: fit-content;
+  margin-inline: auto;
+}
+
+.redes-sociales a:hover .socialmedia {
+  scale: 1.2;
+}
+
+.flex{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.flex input{
+    aspect-ratio: 1;
+    max-width: fit-content;
+    margin: 0;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+
+    button{
+        width: 100%;
+    }
+}
+
+.alfabeto{
+    width: 600px;
+    overflow-wrap: hidden;
+}
+
+.proyectoVida{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.proyectoVida img{
+  width: 300px;
+  border-radius: 8px;
+}

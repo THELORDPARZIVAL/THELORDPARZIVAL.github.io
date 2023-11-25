@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HojaVida</title>
+    <link rel="icon" href="IMG/pions.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <picture>
+        <img src="IMG/Fidel.jpg" alt="Foto HojaVida" title="foto HojaVida" />
+      </picture>
+
+      <div id="cabecero">
+        <h1>Hoja De Vida</h1>
+        <p>Fidel Alberto toro Marin</p>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Incio</a></li>
+        <li><a href="cifrado.html">Cifrado</a></li>
+        <li><a href="glosario.html">Glosario</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2 id="cifrado-cesar" class="titulo-2">Cifrado Cesar</h2>
+      <form class="formulario-cesar" name="FormularioCiframiento">
+        <div>
+          <label for="Rotacion">Rotacion alfabeto:</label>
+          <input type="text" name="Rotacion" id="Rotacion" />
+          <div class="flex">
+            <input type="checkbox" name="Usar_Clave" id="Usar_Clave" class="button-check" />
+            <label for="Usar_Clave">Activar uso de clave</label>
+          </div>
+          <div id="claveToggle">
+            <label for="Clave">Clave: </label>
+            <input type="text" name="Clave" id="Clave" />
+            <label for="Desplazamiento_Clave">Desplazamiento Clave: </label>
+            <input type="text" name="Desplazamiento_Clave" id="Desplazamiento_Clave" />
+          </div>
+          <label>Texto a Procesar:</label>
+          <textarea rows="4" cols="70" id="Texto_Origen" name="Texto_Origen" placeholder="(maximo 1000 caracteres)"></textarea>
+        </div>
+
+        <div class="botones">
+          <button class="button" type="button" onclick="Cifrado()">Cifrar</button>
+          <button class="button" type="button" onclick="Descifrado()">Descifrar</button>
+        </div>
+
+        <div class="alfabeto">
+          <p id="Alfabeto_Origen">Alfabeto Origen:</p>
+          <p id="Alfabeto_Cifrado">Alfabeto Cifrado:</p>
+        </div>
+
+        <div class="resultado">
+          <label for="Resultado" style="display: inline">Texto convertido:</label>
+          <div id="Resultado">
+            <p id="Texto_Cifrado">&nbsp;</p>
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>&copy Copy Right 2019 - UCS</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
